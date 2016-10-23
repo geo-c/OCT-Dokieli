@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="do-index">
+    <head>
+        <meta charset="utf-8" />
+        <title>dokieli</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="media/css/basic.css" media="all" rel="stylesheet" title="Basic" />
+        <link href="media/css/lncs.css" media="all" rel="stylesheet alternate" title="LNCS" />
+        <link href="media/css/acm.css" media="all" rel="stylesheet alternate" title="ACM" />
+        <link href="media/css/do.css" media="all" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" media="all" rel="stylesheet" />
+        <link href="media/css/editor.css" media="all" rel="stylesheet" />
+        <script src="scripts/simplerdf.js"></script>
+        <script src="scripts/medium-editor.min.js"></script>
+        <script src="scripts/medium-editor-tables.min.js"></script>
+        <script src="scripts/do.js"></script>
+		<!-- Important Owl stylesheet -->
+		<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+		 
+		<!-- Default Theme -->
+		<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+		 
+		<!--  jQuery 1.7+  -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		 
+		<!-- Include js plugin -->
+		<script src="assets/owl-carousel/owl.carousel.js"></script>
+    </head>
+
+    <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: http://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: https://schema.org/ rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: http://www.w3.org/ns/activitystreams# solid: http://www.w3.org/ns/solid/terms#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+        <main>
+            <article about="" typeof="schema:Article doap:Project">
+                <h1 property="schema:name doap:name">Title Guideline</h1>
+				
+				
+				
+				
+                <div id="content">
+				
+                    <p id="introduction" property="schema:description doap:shortdesc">Description ... ... ...</p>
+
+					<div id="owl-example" class="owl-carousel">
+					  <div> Your Content </div>
+					  <div> Your Content </div>
+					  <div> Your Content </div>
+					  <div> Your Content </div>
+					  <div> Your Content </div>
+					  <div> Your Content </div>
+					  <div> Your Content </div>
+					</div>
+					<script>
+					$(document).ready(function() {
+						$("#owl-example").owlCarousel({
+							 // Most important owl features
+							items : 5,
+							itemsCustom : false,
+							itemsDesktop : [1199,4],
+							itemsDesktopSmall : [980,3],
+							itemsTablet: [768,2],
+							itemsTabletSmall: false,
+							itemsMobile : [479,1],
+							singleItem : false,
+							itemsScaleUp : false,
+						 
+							//Basic Speeds
+							slideSpeed : 200,
+							paginationSpeed : 800,
+							rewindSpeed : 1000,
+						 
+							//Autoplay
+							autoPlay : false,
+							stopOnHover : false,
+						 
+							// Navigation
+							navigation : false,
+							navigationText : ["prev","next"],
+							rewindNav : true,
+							scrollPerPage : false,
+						 
+							//Pagination
+							pagination : true,
+							paginationNumbers: false,
+						 
+							// Responsive 
+							responsive: true,
+							responsiveRefreshRate : 200,
+							responsiveBaseWidth: window,
+						 
+							// CSS Styles
+							baseClass : "owl-carousel",
+							theme : "owl-theme",
+						 
+							//Lazy load
+							lazyLoad : false,
+							lazyFollow : true,
+							lazyEffect : "fade",
+						 
+							//Auto height
+							autoHeight : false,
+						 
+							//JSON 
+							jsonPath : false, 
+							jsonSuccess : false,
+						 
+							//Mouse Events
+							dragBeforeAnimFinish : true,
+							mouseDrag : true,
+							touchDrag : true,
+						 
+							//Transitions
+							transitionStyle : false,
+						 
+							// Other
+							addClassActive : false,
+						 
+							//Callbacks
+							beforeUpdate : false,
+							afterUpdate : false,
+							beforeInit: false, 
+							afterInit: false, 
+							beforeMove: false, 
+							afterMove: false,
+							afterAction: false,
+							startDragging : false
+							afterLazyLoad : false
+						})
+					
+					});
+					</script>
+                    <section id="features" inlist="" rel="schema:hasPart" resource="#features">
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <ul>
+                                <li><a href="#context">
+                                    <i class="fa fa-2x fa-context"><img alt="Context logo" src="media/images/context.svg" width="128" /></i>
+                                    <span>Context</span>
+                                </a></li>
+                                <li><a href="#challenges">
+                                    <i class="fa fa-2x fa-challenges"><img class="img-circle" alt="challenges logo" src="media/images/challenges.svg" width="128" /></i>
+                                    <span>Challenges</span>
+                                </a></li>
+                                <li><a href="#actions">
+                                    <i class="fa fa-2x fa-actions"><img alt="actions logo" src="media/images/actions.svg" width="128" /></i>
+                                    <span>Actions</span>
+                                </a></li>
+                                <li><a href="#results">
+                                    <i class="fa fa-2x fa-results"><img alt="results logo" src="media/images/results.svg" width="128" /></i>
+                                    <span>Results</span>
+                                </a></li>
+								<li><a href="#impact">
+                                    <i class="fa fa-2x fa-impact"><img alt="impact logo" src="media/images/impact.svg" width="128" /></i>
+                                    <span>Impact</span>
+                                </a></li>
+                                <li><a href="#scalingup">
+                                    <i class="fa fa-2x fa-scalingup"><img alt="Scaling Up logo" src="media/images/scalingup.svg" width="128" /></i>
+                                    <span>Scaling Up</span>
+                                </a></li>
+                               
+                            </ul>
+                            <script>//<![CDATA[
+                                var actionMenu = document.querySelectorAll('.action-menu');
+                                for (var i = 0; i < actionMenu.length; i++) {
+                                    actionMenu[i].addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        if (document.body.classList.contains('on-document-menu')) {
+                                            DO.U.hideDocumentMenu(e);
+                                        }
+                                        else {
+                                            DO.U.showDocumentMenu(e);
+                                        }
+                                    });
+                                }
+                            //]]></script>
+                        </div>
+                    </section>
+
+                    <section id="context" inlist="" rel="schema:hasPart" resource="#context">
+                        <h2 property="schema:name">Context</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>bla bla bla.</p>
+                            <p>bla bla bla</p>
+                        </div>
+                    </section>
+					<section id="challenges" inlist="" rel="schema:hasPart" resource="#challenges">
+                        <h2 property="schema:name">Challenges</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>bla bla bla.</p>
+                            <p>bla bla bla</p>
+                        </div>
+                    </section>
+					<section id="actions" inlist="" rel="schema:hasPart" resource="#actions">
+                        <h2 property="schema:name">Actions</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>bla bla bla.</p>
+                            <p>bla bla bla</p>
+                        </div>
+                    </section>
+					<section id="results" inlist="" rel="schema:hasPart" resource="#results">
+                        <h2 property="schema:name">Results</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>bla bla bla.</p>
+                            <p>bla bla bla</p>
+                        </div>
+                    </section>
+					<section id="impact" inlist="" rel="schema:hasPart" resource="#impact">
+                        <h2 property="schema:name">Impact</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>bla bla bla.</p>
+                            <p>bla bla bla</p>
+                        </div>
+                    </section>
+					<section id="scalingup" inlist="" rel="schema:hasPart" resource="#scalingup">
+                        <h2 property="schema:name">Scaling Up</h2>
+                        <div datatype="rdf:HTML" property="schema:description">
+                            <p>bla bla bla.</p>
+                            <p>bla bla bla</p>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+        </main>
+        <footer>
+            <section rel="schema:hasPart" resource="#help-and-shape">
+			
+			<div class="footer">
+				<div class="row">
+					<div class="col-md-9 col-md-push-3">
+						<img src="http://giv-oct.uni-muenster.de:5000/img/oct-logo@2x.png" alt="GEO-C" width="128" title="GEO-C">
+					</div>
+					<div class="col-md-3 col-md-pull-9"><p>
+						<a href="https://geo-c.eu">Project website</a>. Supported by <a href="https://github.com/linkeddata/dokieli">dokieli</a>.</p>
+					</div>
+				</div>
+        </div>
+		
+		
+            </section>
+        </footer>
+    </body>
+</html>
