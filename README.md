@@ -7,40 +7,58 @@ These guides use the Dokieli (https://github.com/linkeddata/dokieli) tool. Dokie
 Dokieli is coded using HTML, where a main file defines all content. We define mandatory sections, so all guidelines have to follow. The first part of the guidelines is the title and a short description. Also, the guidelines have to include six sections: Context, Challenges, Actions, Results, Impact and Scaling Up.  Following, we show the fragments to change in order to personalize the guidelines.
 
 *Title
+```html
 <h1 property="schema:name doap:name">Title Guideline</h1>
+```
+
 
 *Description general
+```html
 <p id="introduction" property="schema:description doap:shortdesc">Description ... ... ...</p>
+```
+
 
 *Sections (Context ex.) content
+```html
 <section id="context" inlist="" rel="schema:hasPart" resource=" #context">
 <h2 property="schema:name">Context</h2>
 <div datatype="rdf:HTML" property="schema:description">
      <p>bla bla bla ...</p>
 </div>
 </section>
+```
 
 
 To offer an interactive guideline, Dockieli supports the possibility to add some media elements. We show some snippets to add these items.  
 
 *Photo
+```html
 <img src="URL.jpg" style="width:304px; height:228px;">
+```
+
 
 *Audio
+```html
 <audio src="URL.ogg"></audio>
+```
+
 
 *Video
+```html
 <video poster="http://www.html5rocks.com/es/tutorials/video/basics/star.png" id="video-canvas-frames" controls="" >
 <source src="URL.mp4" type="video/mp4; codecs=&quot;avc1.42E01E,             mp4a.40.2&quot;">
 <source src="URL.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
 <source src="URL.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
 </video>
+```
 
 
 Also, Dokieli (HTML5) offer more functions.
 
 
 *PDF
+
+```html
 <figure id="fig_userStudy">
 <object data="URL.pdf" type="application/pdf"        
 width="100%" height="350" internalinstanceid="3" title="">
@@ -50,15 +68,22 @@ width="100%" height="350" internalinstanceid="3" title="">
 </object>
 <figcaption>Caption.</figcaption>
 </figure>  
+```
+
 
 Reference call
+```html
 <a href="#fig_userStudy">Figure 1</a>
+```
+
 
 *SPARQL GUI
+```html
 <figure id="figure-sparql-editor">
 <object type="text/html" data="http://yasgui.org/" width="640" height="480"></object>
 <figcaption>SPARQL GUI</figcaption>
 </figure>
+```
 
 
 Also, you can add other components like maps, chats, … using Javascript libraries that you know!
