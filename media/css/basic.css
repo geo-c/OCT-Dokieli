@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4;
+  color:#333;
+  margin: 0; padding: 0;
+  width:100%;
+}
+
+body > header {
+text-align:center;
+}
+body > header {
+  margin-top:2em;
+}
+
+header nav ul {
+text-align:center;
+}
+header nav li {
+list-style-type:none;
+display:inline;
+}
+header nav li:before {
+content:"\2022\0020";
+}
+header nav li:first-child:before {
+content:"";
+}
+
+h1 {
+  font-family: Serif; font-weight: normal; font-size: 4em;
+  text-align: center;
+  margin:0.75em 0;
+}
+h2, h3, h4 { font-family: Arial, Helvetica, sans-serif; }
+h2 { font-size: 1.4em; line-height:1; }
+h3 { font-size: 1.2em; line-height:0.8; }
+h4 { font-size: 1.2em; font-style: italic; }
+
+section article h1,
+section article h2,
+section article h3 {
+  margin:0;
+  font-size:1em;
+  font-weight:normal;
+  text-align:left;
+}
+
+section {
+  max-width: calc(100% - 1em);
+  padding: 0 0.5em;
+}
+section section {
+  width:100%;
+  max-width:none;
+}
+dl[id^="document-"], #authors {
+  max-width: none;
+  width: 100%;
+}
+#authors dd, #authors li, #keywords li {
+  display: inline;
+  text-align: left;
+  margin-left:1em;
+}
+
+
+a { color: #000; }
+a:hover { color: #555; }
+
+nav ul,
+aside ul { list-style: none; padding: 0; }
+
+body > footer { margin-top:2em; }
+body > footer a, body > footer a:hover { color: inherit; }
+
+aside.note.do blockquote article section {
+margin:0;
+}
+
+/* dokieli homepage styles */
+#do-index h1 {
+  text-align: center;
+  font-size: 4em;
+  font-family: Serif; font-weight: normal;
+  margin-top: 0.5em; margin-bottom: 0;
+}
+
+#do-index #introduction {
+  text-align: center;
+  font-size: 1.4em;
+}
+#do-index #features, body > footer {
+  overflow: hidden;
+  padding-top: 1em; padding-bottom: 1em;
+  background-color: #333;
+  color: #EBEBEB;
+}
+
+#do-index #features {
+  width:100%;
+  max-width:calc(100% - 1em);
+  padding-left:0.5em;
+  padding-right:0.5em;
+}
+
+#do-index #features ul {
+  list-style-type: none;
+  padding: 0; margin: 0;
+  font-size: 0.6em;
+  text-align: center;
+}
+
+#do-index #features ul li {
+  overflow: hidden;
+}
+#do-index #features ul span {
+  display: block;
+  font-size: 2em;
+  margin: 0;
+}
+#do-index #features li span:first-child {
+  display: inline-block;
+}
+#do-index #features li span:last-child {
+  display: inline-block;
+  color: #a8a8a8;
+}
+#do-index #features ul li a {
+  display: inline-block;
+  color: inherit; text-decoration: none;
+  width: 100%;
+}
+#do-index #features ul li:hover, #do-index #features ul li:hover span {
+  /*background-color: #BCDE8A; */
+  background-color: #444;
+  /*color: #333;*/
+}
+#do-index #features ul i {
+  width: 1em;
+  height: 1em;
+  padding: 0.3em; margin: 0 0.2em;
+  color: #81bb2c; background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#do-index #features i.solid img {
+  width: 100%; background-color: #81bb2c; display: block;
+}
+
+#do-index #video {
+  text-align: center;
+  width: 100%;
+  background-color: #ccc;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+video, audio, object {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px){
+  section {
+    width: 50%;
+    margin: 2em auto;
+    padding: 0;
+  }
+  dl[id^="document-"], #authors {
+    width:50%;
+    margin:0 auto;
+  }
+  #do-index #features ul {
+    font-size: 1.2em;
+    float: left;
+    width: 100%;
+  }
+  #do-index #features ul li {
+    float: left;
+    width: 50%;
+    padding: 0.6em 0;
+  }
+  #do-index #features ul li:nth-child(odd) {
+    text-align:right;
+    clear:left;
+  }
+  #do-index #features ul li:nth-child(even) {
+    text-align:left;
+  }
+  #do-index #features ul li span {
+    font-size: 1em;
+  }
+  #do-index #features ul li span:first-of-type {
+    padding-top: 1em;
+  }
+  #do-index #features ul li:nth-child(odd) i,
+  #do-index #features ul li:nth-child(odd) p {
+    float:right;
+  }
+  #do-index #features ul li:nth-child(even) i,
+  #do-index #features ul li:nth-child(even) p {
+    float: left;
+  }
+}
+/* </dokieli homepage styles> */
